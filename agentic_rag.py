@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
 
+import os
+st.write(
+	"Has environment variables been set:",
+	os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"]) 
 
 # using our graph agent
 def generate_graph_agent_response(inputs):
@@ -13,10 +17,11 @@ def generate_graph_agent_response(inputs):
     return response
 
 
-def validate_openai_api_key(api_key: str | None) -> bool:
-    if api_key is None:
-        return False
-    return api_key.startswith("sk-")
+#def validate_openai_api_key(api_key: str | None) -> bool:
+#    if api_key is None:
+#        return False
+#    return api_key.startswith("sk-")
+
 
 
 load_dotenv()
