@@ -17,10 +17,10 @@ def generate_graph_agent_response(inputs):
     return response
 
 
-#def validate_openai_api_key(api_key: str | None) -> bool:
-#    if api_key is None:
-#        return False
-#    return api_key.startswith("sk-")
+def validate_openai_api_key(api_key: str | None) -> bool:
+    if api_key is None:
+        return False
+    return api_key.startswith("sk-")
 
 
 
