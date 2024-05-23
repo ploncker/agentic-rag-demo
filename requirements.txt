@@ -2,6 +2,8 @@ arxiv
 duckduckgo-search
 faiss-cpu
 langchain
+langchain-community 
+langchain-core
 langchain-openai
 langgraph
 pymupdf
